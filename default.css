@@ -243,13 +243,14 @@ h6 { font-size: 16px;}
 #preview-shadow{
 	background-color: var(--previewShadow);
 	max-width: 500px;
-	max-height: 400px;
+	max-height: 430px;
 	padding-left: 30px;
 	padding-top: 30px;
 }
 
 #preview{
 	max-width: 500px;
+	max-height:470px;
 	border:1.5px solid #17a2b8;
 	background-color: var(--previewBg);
 	padding:15px;
