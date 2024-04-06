@@ -62,6 +62,7 @@ h6 { font-size: 16px;}
 	background-color: var(--mainColor);
 	border-bottom:1px solid var(--borderColor);
 	overflow:auto;
+	height: 800px;
 }
 
 .s2{
@@ -167,14 +168,15 @@ h6 { font-size: 16px;}
 	grid-area: left-column;
 	padding-top:50px;
 	padding-bottom: 50px;
+	
 }
 
 #profile_pic{
 	display: block;
 	margin:0 auto;
 
-	height: 200px;
-	width: 200px;
+	height: 280px;
+	width: 280px;
 	object-fit: cover;
 	border:2px solid var(--borderColor);
 }
@@ -232,23 +234,22 @@ h6 { font-size: 16px;}
 .right-column{
 	grid-area: right-column;
 	display: grid;
-	align-content: center;
-
 	padding-top: 50px;
 	padding-bottom: 50px;
+	height:550px;
 }
 
 
 #preview-shadow{
 	background-color: var(--previewShadow);
 	max-width: 500px;
-	height: 275px;
+	max-height: 400px;
 	padding-left: 30px;
 	padding-top: 30px;
 }
 
 #preview{
-	width: 500px;
+	max-width: 500px;
 	border:1.5px solid #17a2b8;
 	background-color: var(--previewBg);
 	padding:15px;
@@ -330,7 +331,13 @@ h6 { font-size: 16px;}
 .thumbnail{
 	display: block;
 	width: 100%;
-	height:180px;
+	height:80px;
+	object-fit: cover;
+}
+.thumbnail1{
+	display: block;
+	width: 100%;
+	height:150px;
 	object-fit: cover;
 }
 
