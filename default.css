@@ -321,23 +321,36 @@ h6 { font-size: 16px;}
 	justify-content: center;
 	padding-bottom: 50px;
 }
+
+.post-wrapper1{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 285px);
+	gap:20px;
+	justify-content: center;
+	padding-top:25px;
+	padding-bottom: 50px;
+}
 .post{
 	border: 1px solid var(--borderColor);
 	-webkit-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
 	-moz-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
 	box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
 	width: 380px; /* Fixed width */
-    height: 300px; /* Fixed height */
-	text-align: justify;
+    height: 350px; /* Fixed height */
 	border-radius: 15px; /* Makes the borders round */
-
-	
 }
+.post1{
+	border: 1px solid var(--borderColor);
+	-webkit-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
+	-moz-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
+	border-radius: 15px; /* Makes the borders round */
+}
+
 
 .thumbnail{
 	display: block;
 	width: 100%;
-	height:80px;
+	height:100px;
 	object-fit: cover;
 }
 .thumbnail1{
