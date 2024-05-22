@@ -17,3 +17,8 @@
 
 
 }
+
+strong {
+    color: var(--strong-text-color);
+    font-weight: bold;
+}

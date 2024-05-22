@@ -15,5 +15,13 @@
 
 	--buttonColor:#17a2b8;
 
+}
+.hamburger .bar {
+    background-color: var(--hamburger-color);
+}
 
+strong {
+    color: var(--hamburger-color);
+	color: var(--strong-text-color);
+    font-weight: bold;
 }
