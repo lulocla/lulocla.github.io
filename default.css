@@ -23,6 +23,8 @@ html, body{
 	padding: 0;
 	margin: 0;
 	scroll-behavior: smooth;
+	    height: 100%;
+
 }
 
 body *{
@@ -39,6 +41,7 @@ h1, h2, h3, h4, h5, h6, strong{
 p, li, span, label, input, textarea{
 	color: var(--secondaryText);
 	font-family: 'Roboto Mono', monospace;
+	text-align:justify;
 }
 
 a{
