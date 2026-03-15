@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NHS Scotland</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" type="text/css" href="default.css">
+	<link id="theme-style" rel="stylesheet" type="text/css" href="">
+	<style>
+		.nhs-card-wrapper {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, 380px);
+			gap: 30px;
+			justify-content: center;
+			padding-top: 30px;
+			padding-bottom: 50px;
+		}
+		.nhs-card {
+			border: 1px solid var(--borderColor);
+			box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
+			border-radius: 15px;
+			width: 380px;
+		}
+		.nhs-card .thumbnail1 {
+			width: 100%;
+			height: 160px;
+			object-fit: cover;
+			display: block;
+			border-radius: 15px 15px 0 0;
+		}
+		.nhs-card .post-preview {
+			background-color: #fff;
+			padding: 18px;
+			border-bottom-left-radius: 15px;
+			border-bottom-right-radius: 15px;
+		}
+		.nhs-card .post-title1 {
+			color: black;
+			margin: 0 0 10px 0;
+			text-align: center;
+			font-size: 15px;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+	</style>
+</head>
+<body>
+
+<section class="s2">
+	<div class="sidebar" id="mySidebar">
+		<button class="close-btn" onclick="w3_close()">&times;</button>
+		<ul class="menu">
+			<li><a href="index.html" class="menu-item">Home</a></li>
+			<li><a href="uni.html" class="menu-item">University</a></li>
+			<li><a href="master.html" class="menu-item">Master</a></li>
+			<li><a href="seh.html" class="menu-item">Event Helper</a></li>
+			<li><a href="bal.html" class="menu-item">Basketball</a></li>
+			<li><a href="charles-river.html" class="menu-item">Charles River</a></li>
+			<li>
+				<a href="nhs-scotland.html" class="menu-item">NHS Scotland</a>
+				<ul class="submenu">
+					<li><a href="hmfus.html" class="menu-item submenu-item">&#8627; HMFUS</a></li>
+					<li><a href="nhs-placement.html" class="menu-item submenu-item">&#8627; Placement</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div>
+		<button class="menu-btn" onclick="w3_open()">&#9776;</button>
+	</div>
+</section>
+
+<section class="s3">
+	<div class="greeting-wrapper">
+		<h3>NHS Scotland</h3>
+	</div>
+	<div class="main-container">
+		<p>My journey with NHS Scotland spans two distinct and meaningful roles — from a clinical laboratory placement during my studies, through to a specialist Healthcare Scientist Practitioner position at NHS Tayside. These experiences gave me hands-on clinical exposure and deepened my commitment to healthcare science.</p>
+	</div>
+</section>
+
+<section class="s2">
+	<div class="main-container">
+		<div class="nhs-card-wrapper">
+
+			<div class="nhs-card">
+				<img class="thumbnail1" src="images/nhs.jpg" alt="HMFUS">
+				<div class="post-preview">
+					<h6 class="post-title1">HMFUS — Hydatidiform Mole Follow-Up Service</h6>
+					<p class="post-intro">Healthcare Scientist Practitioner at NHS Tayside, Ninewells Hospital, specialising in gestational trophoblastic disease diagnostics and the Scottish national molar pregnancy follow-up programme.</p>
+					<a href="hmfus.html">Find Out More</a>
+				</div>
+			</div>
+
+			<div class="nhs-card">
+				<img class="thumbnail1" src="images/abertay.jpg" alt="NHS Fife Placement">
+				<div class="post-preview">
+					<h6 class="post-title1">Clinical Placement — NHS Fife Blood Sciences</h6>
+					<p class="post-intro">A 6-month clinical laboratory placement at NHS Fife Blood Sciences and Blood Transfusion as part of my BSc Applied Biomedical Science degree (LSC307).</p>
+					<a href="nhs-placement.html">Find Out More</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
