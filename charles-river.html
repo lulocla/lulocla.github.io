@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Scientific Associate - Formulations — Charles River Laboratories</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" type="text/css" href="default.css">
+	<link id="theme-style" rel="stylesheet" type="text/css" href="">
+	<style>
+		* {
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+		}
+		body {
+			line-height: 1.8;
+			color: #000;
+			font-size: 16px;
+		}
+		h3 {
+			font-size: 2.2em;
+			font-weight: 700;
+			margin-bottom: 0.5em;
+			color: #000;
+			letter-spacing: 0.2px;
+		}
+		h5 {
+			font-size: 1.45em;
+			font-weight: 700;
+			margin-top: 1.2em;
+			margin-bottom: 1em;
+			color: #000;
+			letter-spacing: 0.3px;
+			border-bottom: 2px solid #e0e0e0;
+			padding-bottom: 0.6em;
+		}
+		h6 {
+			font-size: 1.15em;
+			font-weight: 650;
+			margin-top: 1.5em;
+			margin-bottom: 0.8em;
+			color: #000;
+			letter-spacing: 0.2px;
+		}
+		p {
+			font-size: 16px;
+			line-height: 1.8;
+			margin-bottom: 1.2em;
+			color: #000;
+		}
+		ul {
+			margin-bottom: 1.5em;
+		}
+		ul li {
+			font-size: 16px;
+			line-height: 1.8;
+			margin-bottom: 1em;
+			color: #000;
+		}
+		ul li strong {
+			color: #000;
+			font-weight: 650;
+		}
+		.greeting-wrapper h3 {
+			border-bottom: none;
+			padding-bottom: 0;
+		}
+		.main-container {
+			max-width: 950px;
+			margin: 0 auto;
+		}
+		.meta-info {
+			color: #666;
+			font-family: 'Roboto Mono', monospace;
+			font-size: 13px;
+			font-weight: 500;
+			letter-spacing: 0.3px;
+		}
+		.skills-container {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+			gap: 24px;
+			margin-top: 1.5em;
+		}
+		.skill-box {
+			background-color: #f9f9f9;
+			border-left: 5px solid #888;
+			padding: 24px;
+			border-radius: 3px;
+			box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+			transition: all 0.3s ease;
+		}
+		.skill-box:hover {
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+			background-color: #fafafa;
+			border-left-color: #555;
+		}
+		.skill-box strong {
+			color: #000;
+			display: block;
+			margin-bottom: 12px;
+			font-size: 1.08em;
+			font-weight: 650;
+		}
+		.skill-box p {
+			margin: 0;
+			font-size: 15px;
+			color: #000;
+			line-height: 1.7;
+		}
+		.functions-container {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+			gap: 24px;
+			margin-top: 1.5em;
+		}
+		.function-box {
+			background-color: #f9f9f9;
+			border-left: 5px solid #888;
+			padding: 24px;
+			border-radius: 3px;
+			box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+			transition: all 0.3s ease;
+		}
+		.function-box:hover {
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+			background-color: #fafafa;
+			border-left-color: #555;
+		}
+		.function-box h6 {
+			margin-top: 0;
+			border-bottom: none;
+			color: #000;
+			font-size: 1.1em;
+		}
+		.function-box p {
+			margin: 0;
+			font-size: 15px;
+			color: #000;
+			line-height: 1.7;
+		}
+		.role-item {
+			background-color: transparent;
+			padding: 20px 0 20px 80px;
+			border-radius: 0;
+			border-left: none;
+			box-shadow: none;
+			position: relative;
+			margin-bottom: 24px;
+		}
+		.role-item::before {
+			content: attr(data-number);
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 60px;
+			height: 60px;
+			background-color: #e8e8e8;
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 24px;
+			font-weight: 700;
+			color: #000;
+		}
+		.role-item h6 {
+			margin-top: 0;
+			border-bottom: none;
+			color: #000;
+			font-size: 1.15em;
+			margin-bottom: 0.6em;
+		}
+		.role-item p {
+			margin: 0;
+			font-size: 15px;
+			color: #000;
+			line-height: 1.7;
+		}
+		section {
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+		.s2, .s3 {
+			background-color: transparent;
+		}
+	</style>
+</head>
+<body>
+<section class="s2">
+	<div id="sidebar-container"></div>
+</section>
+<section class="s3">
+	<div class="greeting-wrapper">
+		<h3>Scientific Associate - Formulations</h3>
+	</div>
+	<div class="main-container">
+		<p style="text-align:center;" class="meta-info">
+			Scientific Associate, Charles River Laboratories &nbsp;|&nbsp; Elphinstone Facility, Tranent, Scotland &nbsp;|&nbsp; [Start Date] – Present
+		</p>
+	</div>
+</section>
+<section class="s2" style="padding-left:30px; padding-right:30px;">
+	<div class="main-container">
+		<h5>About Preclinical Drug Development</h5>
+		<p>Determining a drug's safety profile is one of the most critical stages of the drug development pathway. Preclinical safety assessment studies are essential for evaluating the potential risks of new therapeutic compounds before they can progress to human trials. Complications and inefficiencies with preclinical studies can create costly delays in bringing life-saving medications to patients. Charles River Laboratories is a leading Contract Research Organization (CRO) that supports pharmaceutical and biotechnology companies through comprehensive preclinical testing services using state-of-the-art technologies in a global network of facilities.</p>
+	</div>
+</section>
+<section class="s3" style="padding-left:30px; padding-right:30px;">
+	<div class="main-container">
+		<h5>About the Service</h5>
+		<p>The Formulation Services Department at Charles River's Elphinstone facility in Tranent (near Edinburgh) is responsible for preparing, characterizing, and managing test items used in preclinical safety assessment studies. We support both GLP (Good Laboratory Practice) and non-GLP studies, working with diverse compounds and formulation types.</p>
+		<h6>Key Functions</h6>
+		<div class="functions-container">
+			<div class="function-box">
+				<h6>Formulation Preparation</h6>
+				<p>We prepare vehicles and formulations using a variety of techniques tailored to study requirements. This includes precise mixing, homogenization, and quality control to ensure consistency and stability of test substances. Each formulation is prepared according to detailed Formulation Process Documents and Good Laboratory Practice standards.</p>
+			</div>
+			<div class="function-box">
+				<h6>Test Item Management</h6>
+				<p>We maintain secure storage and strict control of test items throughout the preclinical study lifecycle. This includes proper labelling, traceability, and documentation to ensure the integrity of the test substance. All records are maintained in accordance with ALCOA+ principles (Attributable, Legible, Contemporaneous, Original, Accurate, and supported by digital infrastructure).</p>
+			</div>
+			<div class="function-box">
+				<h6>Sampling and Analysis</h6>
+				<p>Archive samples and formulation analysis samples are systematically collected and preserved. These samples are analysed to verify formulation specifications, confirm homogeneity, and document stability. Regular testing ensures formulations meet study requirements throughout the study duration.</p>
+			</div>
+			<div class="function-box">
+				<h6>Quality Assurance</h6>
+				<p>All work is conducted in accordance with Study Plans (Protocols), Standard Operating Procedures (SOPs), and the principles of Good Laboratory Practice (GLP) and Good Clinical Practice (GCP). We maintain meticulous records and collaborate closely with other departments to ensure study integrity and regulatory compliance.</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="s2" style="padding-left:30px; padding-right:30px;">
+	<div class="main-container">
+		<h5>My Role</h5>
+		<div class="role-list">
+			<div class="role-item" data-number="1">
+				<h6>Formulation Development & Preparation</h6>
+				<p>Prepared vehicles and formulations using a variety of pharmaceutical techniques on both non-GLP and GLP safety assessment programmes. Tailored formulation approaches to different compound properties and study requirements, ensuring consistency and stability throughout the study lifecycle.</p>
+			</div>
+			<div class="role-item" data-number="2">
+				<h6>Test Item Management & Storage</h6>
+				<p>Managed test item storage and control systems, ensuring traceability and integrity of compounds throughout the study lifecycle. Maintained secure systems with proper labelling, documentation, and adherence to storage protocols.</p>
+			</div>
+			<div class="role-item" data-number="3">
+				<h6>Sampling & Quality Control</h6>
+				<p>Collected archive and formulation analysis samples with precision and maintained strict adherence to sampling protocols and documentation standards. Supported analytical verification of formulation specifications and stability monitoring.</p>
+			</div>
+			<div class="role-item" data-number="4">
+				<h6>Regulatory & Record Compliance</h6>
+				<p>Maintained comprehensive and accurate records in accordance with ALCOA+ principles, demonstrating meticulous attention to detail and regulatory compliance. Conducted work in strict accordance with Study Plans (Protocols), SOPs, Formulation Process Documents, GLP, and GCP guidelines.</p>
+			</div>
+			<div class="role-item" data-number="5">
+				<h6>Collaboration & Communication</h6>
+				<p>Collaborated effectively as part of a multidisciplinary team, communicating complex formulation data and supporting study progression. Liaised with internal departments (safety assessment teams, QA) and external customers to understand study requirements and deliver formulations to specification.</p>
+			</div>
+			<div class="role-item" data-number="6">
+				<h6>Project Management & Deadlines</h6>
+				<p>Managed workload to meet agreed deadlines whilst maintaining the highest standards of quality and accuracy. Prioritized tasks across multiple concurrent studies and maintained focus on study integrity and professional standards.</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="s3" style="padding-left:30px; padding-right:30px;">
+	<div class="main-container">
+		<h5>Skills Gained</h5>
+		<div class="skills-container">
+			<div class="skill-box">
+				<strong>Pharmaceutical Formulation Preparation</strong>
+				<p>Developed expertise in preparing vehicles and formulations using various techniques (mixing, homogenization, particle size reduction) suited to different compound properties and study requirements.</p>
+			</div>
+			<div class="skill-box">
+				<strong>Good Laboratory Practice (GLP) Compliance</strong>
+				<p>Worked within a GLP-regulated environment, understanding regulatory requirements, audit trails, and the importance of integrity in preclinical research.</p>
+			</div>
+			<div class="skill-box">
+				<strong>Quality and Documentation Standards</strong>
+				<p>Mastered ALCOA+ record-keeping principles and maintained comprehensive documentation ensuring full traceability and regulatory compliance.</p>
+			</div>
+			<div class="skill-box">
+				<strong>Analytical Sampling</strong>
+				<p>Gained hands-on experience in systematic sample collection, preservation, and archival practices for formulation analysis and stability studies.</p>
+			</div>
+			<div class="skill-box">
+				<strong>Test Item Management</strong>
+				<p>Developed proficiency in secure storage systems, inventory control, and traceability of test compounds to ensure study integrity.</p>
+			</div>
+			<div class="skill-box">
+				<strong>Protocol and SOP Adherence</strong>
+				<p>Learned to work precisely within defined Study Plans and Standard Operating Procedures, understanding the critical importance of protocol compliance in preclinical studies.</p>
+			</div>
+			<div class="skill-box">
+				<strong>Teamwork and Communication</strong>
+				<p>Developed strong interpersonal skills through collaboration with safety assessment scientists, quality assurance teams, and external clients in a fast-paced research environment.</p>
+			</div>
+			<div class="skill-box">
+				<strong>Attention to Detail</strong>
+				<p>Cultivated meticulous attention to detail in all tasks, recognizing how small errors in formulation preparation or documentation can impact study validity and patient safety downstream.</p>
+			</div>
+			<div class="skill-box">
+				<strong>Time Management</strong>
+				<p>Learned to prioritize tasks and manage multiple studies with overlapping deadlines whilst maintaining quality standards.</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="s2" style="padding-left:30px; padding-right:30px; padding-bottom:40px;">
+	<div class="main-container">
+		<h5>Why This Role Matters</h5>
+		<p>For 75 years, Charles River employees have worked together to assist in the discovery, development, and safe manufacture of new drug therapies. The work performed in the Formulation Services Department is foundational to preclinical drug development—ensuring that safety assessment studies are conducted with precisely characterized and stable test items. This role directly contributes to bringing new medicines to patients who need them, supporting the development of 86% of drugs approved by the FDA in 2021. Every formulation prepared and every sample collected represents a step forward in ensuring the safety and efficacy of future medications.</p>
+	</div>
+</section>
+<script src="script.js"></script>
+</body>
+</html>
